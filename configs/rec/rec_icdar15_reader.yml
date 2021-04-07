@@ -1,13 +1,13 @@
 TrainReader:
   reader_function: ppocr.data.rec.dataset_traversal,SimpleReader
   num_workers: 8
-  img_set_dir: /content/drive/MyDrive/VinBrain/License_Plate/data/dataset/
-  label_file_path: /content/drive/MyDrive/VinBrain/License_Plate/PaddleOCR/train_data/gt_train.txt
+  img_set_dir: .
+  label_file_path: ./HanddleOCR/gt_train.txt
   
 EvalReader:
   reader_function: ppocr.data.rec.dataset_traversal,SimpleReader
-  img_set_dir: /content/drive/MyDrive/VinBrain/License_Plate/data/dataset
-  label_file_path: /content/drive/MyDrive/VinBrain/License_Plate/PaddleOCR/train_data/gt_val.txt
+  img_set_dir: .
+  label_file_path: ./HanddleOCR/gt_val.txt
 
 TestReader:
   reader_function: ppocr.data.rec.dataset_traversal,SimpleReader

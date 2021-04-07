@@ -4,7 +4,7 @@ Global:
   epoch_num: 1000
   log_smooth_window: 20
   print_batch_step: 10
-  save_model_dir: ./output/rec_CRNN
+  save_model_dir: /content/drive/MyDrive/VinBrain/License_Plate/PaddleOCR/PaddleOCR/HanddleOCR/output/rec_CRNN
   save_epoch_step: 300
   eval_batch_step: 500
   train_batch_size_per_card: 256
@@ -13,8 +13,8 @@ Global:
   max_text_length: 25
   character_type: en
   loss_type: ctc
-  reader_yml: ./configs/rec/rec_icdar15_reader.yml
-  pretrain_weights: /content/drive/MyDrive/VinBrain/License_Plate/PaddleOCR/PaddleOCR/pretrain_models/rec_mv3_none_bilstm_ctc_v2.0_train
+  reader_yml: ./HanddleOCR/configs/rec/rec_icdar15_reader.yml
+  pretrain_weights: ./HanddleOCR/pretrain_models/rec_mv3_none_bilstm_ctc_v2.0_train
   checkpoints:
   save_inference_dir:
   infer_img:
@@ -38,7 +38,7 @@ Loss:
 
 Optimizer:
   function: ppocr.optimizer,AdamDecay
-  base_lr: 0.0005
+  base_lr: 0.005
   beta1: 0.9
   beta2: 0.999
   decay:
