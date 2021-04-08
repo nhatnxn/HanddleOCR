@@ -17,6 +17,8 @@ from __future__ import division
 from __future__ import print_function
 
 import os
+import paddle
+paddle.enable_static()
 import sys
 __dir__ = os.path.dirname(__file__)
 sys.path.append(__dir__)

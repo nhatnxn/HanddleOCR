@@ -18,6 +18,8 @@ from __future__ import print_function
 
 import numpy as np
 import os
+import paddle
+paddle.enable_static()
 import sys
 __dir__ = os.path.dirname(__file__)
 sys.path.append(__dir__)
